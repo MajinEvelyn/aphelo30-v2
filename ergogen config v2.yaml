@@ -1,0 +1,232 @@
+meta:
+  engine: 4.1.0
+units:
+  px: cx + 2
+  py: cy + 2
+  $default_width: 18
+  $default_height: 17
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [100, -100]
+      key:
+        padding: 1cy
+        spread: 1cx
+      columns:
+        pinky:
+          key:
+            splay: 28
+          rows:
+            bottom:
+              column_net: P9
+            home:
+              column_net: P8
+            top:
+              column_net: P7
+        ring:
+          key:
+            stagger: 7
+            splay: -12
+            spread: 20
+          rows:
+            bottom:
+              column_net: P6
+            home:
+              column_net: P5
+            top:
+              column_net: P4
+        middle:
+          key:
+            stagger: 0
+            splay: -12
+            spread: 20
+          rows:
+            bottom:
+              column_net: P3
+            home:
+              column_net: P2
+            top:
+              column_net: P10
+        index:
+          key:
+            stagger: -5
+            splay: -4
+            spread: 19
+          rows:
+            bottom:
+              column_net: P16
+            home:
+              column_net: P14
+            top:
+              column_net: P15
+        inner:
+          key:
+            stagger: -5
+          rows:
+            bottom:
+              column_net: P18
+            home:
+              column_net: P19
+            top:
+              column_net: P20
+      rows:
+        bottom:
+        home:
+        top:
+outlines:
+  bweh:
+    - what: rectangle
+      size: [cx, cy]
+      where: true
+  bloc:
+    - what: rectangle
+      operation: stack
+      size: [108, 80]
+      adjust.shift: [1.165 sx, -0.95 sy]
+      fillet: 8
+  bingus:
+    - what: polygon
+      fillet: 0
+      points:
+        - ref: matrix_pinky_bottom
+          shift: [-0.5cx,-0.5cy]
+        - ref: matrix_pinky_top
+          shift: [-0.5cx,0.5cy]
+        - ref: matrix_pinky_top
+          shift: [0.5cx,0.5cy]
+        - ref: matrix_ring_top
+          shift: [-0.5cx,0]
+        - ref: matrix_ring_top
+          shift: [-0.5cx,0.5cy]
+        - ref: matrix_ring_top
+          shift: [0.5cx,0.5cy]
+        - ref: matrix_middle_top
+          shift: [-0.5cx,0.28cy]
+        - ref: matrix_middle_top
+          shift: [-0.5cx,0.5cy]
+        - ref: matrix_middle_top
+          shift: [0.5cx,0.5cy]
+        - ref: matrix_middle_top
+          shift: [0.5cx,0.25cy]
+        - ref: matrix_index_top
+          shift: [-0.5cx,0.5cy]
+        - ref: matrix_index_top
+          shift: [0.5cx,0.5cy]
+        - ref: matrix_inner_top
+          shift: [-0.5cx,0.5cy]
+        - ref: matrix_inner_top
+          shift: [0.5cx,0.5cy]
+        - ref: matrix_inner_bottom
+          shift: [9,-27]
+        - ref: matrix_inner_bottom
+          shift: [-60,-27]
+  combo:
+    - name: bloc
+    - operation: subtract
+      name: bweh
+pcbs:
+  aphelo30:
+    template: kicad8
+    outlines:
+      main:
+        outline: bloc
+    footprints:
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          from: GND
+          to: "{{column_net}}"
+          include_corner_marks: true
+          include_keycap: true
+          keycap_height: 16.5
+          keycap_width: 17.5
+          reversible: true
+          solder: false
+          hotswap: true
+          choc_v2_support: false
+          outer_pad_width_front: 2.0
+          outer_pad_width_back: 2.0
+      mcu:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: matrix_inner_bottom
+        params:
+          reversible: true
+          only_required_jumpers: true
+        adjust:
+          shift: [-13.9, -19]
+          rotate: -90
+      on_off_switch:
+        what: ceoloide/power_switch_smd_side
+        where: matrix_index_bottom
+        params:
+          from: BAT_P
+          to: RAW
+          reversible: true
+        adjust:
+          shift: [-40, -31.8]
+          rotate: -90
+      reset_switch:
+        what: ceoloide/reset_switch_smd_side
+        where: matrix_index_bottom
+        params:
+          reversible: true
+        adjust:
+          shift: [-30, -31.5]
+          rotate: -180
+      battery_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: matrix_index_bottom
+        params:
+          reversible: true
+        adjust:
+          shift: [-11, -10]
+          rotate: -90
+      m2_screw_mcu1:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_index_bottom
+        adjust:
+          shift: [-20,-28]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      m2_screw_bottomleft:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_index_bottom
+        adjust:
+          shift: [-72,-24]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      m2_screw_mcu2:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_index_bottom
+        adjust:
+          shift: [5,-11]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      m2_screw_topleft:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_index_bottom
+        adjust:
+          shift: [-72,38]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      m2_screw_topright:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_index_bottom
+        adjust:
+          shift: [18,42]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+cases:
