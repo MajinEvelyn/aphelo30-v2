@@ -2,6 +2,9 @@
 
 Pictured with KLP Lame keycaps that I dyed with [Rit Synthetic Dye](https://www.ritdye.com/type/dyemore-for-synthetics/) using [this method](https://blog.zsa.io/how-to-dye-keycaps/). Case printed in Dark Red PLA.
 
+![sample1](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/DSCF4149.JPG)
+![sample2](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260229.JPG)
+
 ## Design Parameters
 - Full split
 - ZMK powered BLE wireless
@@ -13,8 +16,6 @@ Pictured with KLP Lame keycaps that I dyed with [Rit Synthetic Dye](https://www.
 - Middle, ring, and pinky splay
 
 Named for the *Aphelocoma* genus of scrub jay birds, like the original. 
-![mag usb adapter](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/DSCF4149.JPG)
-![usb connected](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260229.JPG)
 
 ## Overview
 
