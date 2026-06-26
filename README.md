@@ -1,7 +1,8 @@
 # aphelo30
 
-![desk pic 1](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260229.JPG)
-![desk pic 2](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/DSCF4149.JPG)
+![example 1](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260229.JPG)
+
+![example 2](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/DSCF4149.JPG)
 
 Pictured with KLP Lame keycaps that I dyed with [Rit Synthetic Dye](https://www.ritdye.com/type/dyemore-for-synthetics/) using [this method](https://blog.zsa.io/how-to-dye-keycaps/). Case printed in Dark Red PLA.
 
