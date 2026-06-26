@@ -1,5 +1,7 @@
 # aphelo30
-  
+
+![mag usb adapter](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260240.JPG)
+![usb connected](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260242.JPG)
 ![example 1](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260229.JPG)
 
 ![example 2](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/DSCF4149.JPG)
