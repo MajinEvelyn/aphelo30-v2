@@ -23,7 +23,7 @@ This weird combination of features is designed for my hands, which no currently 
 
 Compared to the first version of this keyboard, I adjusted the splay, overall key position, power and reset button positions, and adjusted the PCB and case to accomodate magnetic USB connectors, which I find very convenient. Additionally, instead of a carrying case using a sliding design, this project uses a much more compact magnetic cover to sandwich between both halves.
 
-In this repo you will find all files related to the design process, including the Ergogen config, KiCAD PCB files, related Gerbers, and case 3d files for printing. Unfortunately, I was only able to get the PCB to a 115x85mm footprint with this splay, so a little outside of the <100x100mm discount size for JLCPCB. Despite this and the expensive microcontroller, you should be able to build this board for somewhere between 80-120$.
+In this repo you will find all files related to the design process, including the Ergogen config, KiCAD PCB files, related Gerbers, and case 3d files for printing. 
 
 ## Case
 
