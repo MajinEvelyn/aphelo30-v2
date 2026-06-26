@@ -1,7 +1,7 @@
 # aphelo30
 
-![desk pic 1](https://github.com/MajinEvelyn/aphelo30-v2/tree/main/img/P6260229.JPG)
-![desk pic 2](https://github.com/MajinEvelyn/aphelo30-v2/tree/main/img/DSCF4149.JPG)
+![desk pic 1](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260229.JPG)
+![desk pic 2](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/DSCF4149.JPG)
 
 Pictured with KLP Lame keycaps that I dyed with [Rit Synthetic Dye](https://www.ritdye.com/type/dyemore-for-synthetics/) using [this method](https://blog.zsa.io/how-to-dye-keycaps/). Case printed in Dark Red PLA.
 
@@ -34,14 +34,14 @@ This case, and PCB is designed with the magnetic USB adapters linked in the BOM,
 
 The magnets are secured in the cutouts using adhesive, in my case I used B-7000 Clear glue.
 
-![mag usb adapter](https://github.com/MajinEvelyn/aphelo30-v2/tree/main/img/P6260240.JPG)
-![usb connected](https://github.com/MajinEvelyn/aphelo30-v2/tree/main/img/P6260242.JPG)
+![mag usb adapter](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260240.JPG)
+![usb connected](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/P6260242.JPG)
 
 ## Carrying Case
 
 This "case" is more of a magnetically attached sandwich cover for the keycaps, and with this arrangement of magnets is very strong. I easily slide into a slot in my camera bag for work.
 
-![carry case](https://github.com/MajinEvelyn/aphelo30-v2/tree/main/img/DSCF4166.JPG)
+![carry case](https://github.com/MajinEvelyn/aphelo30-v2/blob/main/img/DSCF4166.JPG)
 
 ## Firmware
 ZMK: https://github.com/MajinEvelyn/zmk-config-aphelo30
